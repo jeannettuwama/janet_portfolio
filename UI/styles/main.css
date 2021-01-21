@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background-color: #fdfafa;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .navigation {
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0px -1px 8px #129490;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .navigation .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navigation .logo {
+    padding: 4px;
+  }
+  
+  .navigation .logo img {
+    width: 46px;
+  }
+  
+  .navigation ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    color: #129490;
+  }
+  
+  .navigation ul li a:hover {
+    border-bottom: 4px solid #129490;
+    color: #129490;
+    font-weight: bold;
+  }
+  
+  .first-div {
+    padding-top: 3.2rem;
+  }
+  
+  /* cards design */
+  .card-container {
+    width: 100%;
+  }
+  
+  .blog-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .blog-section h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #129490;
+  }
+  .blog-section h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: #4e1f84;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card-item {
+    background-color: #1f6679;
+    height: 400px;
+    border-radius: 2rem 0px 2rem 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .hover-layer {
+    background-color: #129490bf;
+    text-align: center;
+    height: 100%;
+    /* display: none; */
+    margin-top: 150%;
+    transition: all 0.5s ease-out;
+  }
+  
+  .hover-layer h2 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    padding-top: 8rem;
+    color: #fff;
+  }
+  
+  .hover-layer p {
+    color: #fff;
+  }
+  
+  .card-item:hover .hover-layer {
+    margin-top: 0;
+  }
+  
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #043130;
+    margin-top: 2rem;
+  }
+  
+  .footer h5 {
+    color: #1feae4;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  
+  .footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    color: #fff;
+  }
+  
+  .footer ul li a:hover {
+    border-bottom: 4px solid #02ece5;
+    color: #02ece5;
+    font-weight: bold;
+  }
+  
+  .footer .social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  
+  .footer .social-media a {
+    display: block;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 99999px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+  }
+  
+  .footer .social-media a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer .social-media img {
+    width: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+  }
+  
+  .footer .copy-right {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  .navigation-mobile {
+    display: none;
+   position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #fff;
+    padding: 12%;
+  }
+  
+  .navigation-mobile img {
+    width: 127px;
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+  
+  .navigation-mobile ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .close-btn {
+    padding: 8px;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid red;
+    color: red;
+    font-size: 1.2rem;
+  }
+  
+  .navigation-mobile ul li a {
+    text-decoration: none;
+    padding: 10px 8px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    color: #129490;
+    font-size: 1rem;
+    border-bottom: 1px solid;
+  }
+  
+  .navigation-mobile ul li a:hover {
+    border-bottom: 4px solid #129490;
+    color: #129490;
+    font-weight: bold;
+  }
+  
+  .links-burger {
+    display: none;
+    width: 60px;
+    border: none;
+    background: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .links-burger hr {
+    border-width: 2px;
+    border-color: #4e1f84;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  
+  /* button style */
+  .button-styled {
+    background-color: #155d5a;
+    padding: 0.5rem 1.3rem;
+    font-size: 1.4rem;
+    border-radius: 24px 0px 24px 0px;
+    border: 0.2rem solid #fff;
+    color: #fff;
+    box-shadow: 3px 5px 4px 1px #093130;
+    transition: all 0.2s ease-out;
+  }
+  
+  .button-styled:hover {
+    box-shadow: 6px 9px 4px 1px #093130;
+    border: 0.2rem solid #155d5a;
+    background-color: #fff;
+    border: 0.2rem solid #155d5a;
+    color: #155d5a;
+  }
+  
+  .blog-details-link {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  /* form */
+  .form-styled {
+    background-color: #fff;
+    border: 1px solid #155d5a;
+    padding: 2rem 1rem;
+    border-radius: 30px 0px;
+  }
+  
+  .form-styled label {
+    display: block;
+    color: #186764;
+    font-size: 1.2rem;
+  }
+  
+  .form-styled .form-contain {
+    padding-bottom: 1rem;
+  }
+  
+  .comment-form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 3rem;
+    margin-left: -1rem;
+  }
+  
+  .form-styled .input {
+    width: 97%;
+    border: 3px solid #186764;
+    border-radius: 12px 0px;
+    padding: 4px;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 5px;
+    background: #1867641f;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .card-container {
+      display: block !important;
+      margin-top: 1rem;
+    }
+  
+    .links {
+      display: none;
+    }
+  
+    .links-burger {
+      display: block;
+    }
+  
+    .footer h5{
+      font-size: 1rem;
+    }
+    .footer .social-media {
+     
+      max-width: 200px;
+      margin: auto;
+      margin-top: 10px;
+    }
+    .footer .social-media img {
+      width: 20px;
+      display: block;
+      margin: auto;
+      margin-top: 6px;}
+    .footer .social-media a {
+      display: block;
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+  }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr !important;
+      margin-top: 1rem;
+    }
+   
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr !important;
+      margin-top: 1rem;
+    }
+    
+  
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 768px) {
+    .card-container .card-item {
+      margin-bottom: 17px !important;
+    }
+    .footer {
+      padding-top: 3rem;
+      padding-bottom: 30rem !important;
+      background-color: #043130;
+      margin-top: 2px;
+      overflow: hidden;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .footer {
+      padding-top: 3rem;
+      padding-bottom: -24rem !important;
+      background-color: #043130;
+      margin-top: 2px;
+      overflow: hidden;
+      display: block;
+      height: 0.00099px;
+    }
+    .footer .copy-right {
+    font-size: 0.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .footer {
+      padding-top: 3rem;
+      padding-bottom: 16.5rem !important;
+      background-color: #043130;
+      margin-top: 2px;
+      overflow: hidden;
+   
+    }
+  }

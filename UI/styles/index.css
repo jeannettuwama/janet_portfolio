@@ -1,0 +1,128 @@
+.hero-section {
+    background-color: #fff;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-section .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .hero-section .container img {
+    width: 77%;
+  }
+  
+  .image-cover {
+    text-align: center;
+  }
+  
+  .hero-section .container .typography {
+    flex: 1;
+  }
+  
+  .typography h1 {
+    font-size: 5rem;
+    margin-top: 10rem;
+    color: #129490;
+  }
+  
+  .typography h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    letter-spacing: 1rem;
+    margin-top: -8px;
+    color: #4e1f84;
+  }
+  
+  .hero-section .container .image-cover {
+    flex: 1;
+  }
+  
+  .border-right {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .border-right hr {
+    width: 60px;
+    border: 10px solid #129490;
+    flex: 1;
+  }
+  
+  .border-right h3 {
+    flex: 1;
+    padding-left: 5px;
+    font-weight: bold;
+    color: #4e1f84;
+  }
+  
+  .info-section {
+    background-color: #e0fdfc;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .info-section h1 {
+    color: #4e1f84;
+  }
+  
+  .info-section p {
+    padding: 1rem;
+    margin: auto;
+    width: 78%;
+  }
+  
+  /* reponsive */
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .hero-section .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .typography h1 {
+      font-size: 3rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  
+    .typography h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3rem;
+      margin-top: -8px;
+      text-align: center;
+    }
+  
+    .border-right {
+      display: flex;
+      margin-top: 1rem;
+      margin-top: 0px;
+    }
+  
+    .border-right hr {
+      display: none;
+    }
+  
+    .border-right h3 {
+      text-align: center;
+      margin-top: 0px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    /* .hero-section .container {
+      display: flex;
+      flex-direction: column;
+    } */
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    /* .hero-section .container {
+      display: flex;
+      flex-direction: column;
+    } */
+  }
+  
